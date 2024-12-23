@@ -5081,7 +5081,7 @@
 							<p is="i18n-p">
 								if you wish to further the development of the cryptix ecosystem, we accept donations at the following addresses:
 							</p>
-							${[["Cryptix Devfund donations:","cryptix:qzrq7v5jhsc5znvtfdg6vxg7dz5x8dqe4wrh90jkdnwehp6vr8uj7csdss2l7"],["Cryptix WebWallet donations:","cryptix:qqe3p64wpjf5y27kxppxrgks298ge6lhu6ws7ndx4tswzj7c84qkjlrspcuxw"]].map((e=>{let[t,r]=e;return p.dy`
+							${[["Cryptix Devfund donations:","cryptix:qrjefk2r8wp607rmyvxmgjansqcwugjazpu2kk2r7057gltxetdvk8gl9fs0w"],["Cryptix WebWallet donations:","cryptix:qrjefk2r8wp607rmyvxmgjansqcwugjazpu2kk2r7057gltxetdvk8gl9fs0w"]].map((e=>{let[t,r]=e;return p.dy`
 									<div class="donation-address-box badge">
 										<flow-i18n text="${t}"></flow-i18n>
 										<input class="address" value="${r}" />
