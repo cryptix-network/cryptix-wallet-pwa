@@ -84,13 +84,13 @@ class CryptixPWA extends EventEmitter {
 			this.http_session_ = this.config.http.session;
 		}
 
-		console.log('');
-		console.log('  ____  ____  _____ ____ _____ ____  _____ ');
-		console.log(' / ___||  _ \\| ____/ ___|_   _|  _ \\| ____|');
-		console.log(' \\___ \\| |_) |  _|| |     | | | |_) |  _|  ');
-		console.log('  ___) |  __/| |__| |___  | | |  _ <| |___ ');
-		console.log(' |____/|_|   |_____\\____| |_| |_| \\_\\_____|');
-		console.log('');
+		console.log('_________                        __  .__        ');
+		console.log('\\_   ___ \\_______ ___.__._______/  |_|__|__  ___');
+		console.log('/    \\  \\/\\_  __ <   |  |\\____ \\   __\\  \\  \\/  /');
+		console.log('\\     \\____|  | \\/\\___  ||  |_> >  | |  | >    < ');
+		console.log(' \\______  /|__|   / ____||   __/|__| |__/__/\\_ \\');
+		console.log('        \\/        \\/     |__|                 \\/');
+		
 
 		Wallet.setWorkerLogLevel("none");
 	}
