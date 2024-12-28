@@ -461,15 +461,15 @@
   "zh" : "将删除 datadir（数据文件夹）并重新启动 cryptixd 节点并重新同步",
   "zh_HANS" : ""
 }, {
-  "en" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "de" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "fr" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "id" : "KDX &amp; Cryptix Hak Cipta (c) 2023 Kaspa &amp; 2024 Cryptix<br> Hak Cipta Dilindungi Undang-Undang.",
-  "it" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "ja" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "ko" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "pt_BR" : "KDX & Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> Todos os direitos reservados",
-  "zh" : "KDX &amp; Cryptix 版权所有 (c) 2023 Kaspa &amp; Cryptix 开发者 <br> 保留所有权利。",
+  "en" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "de" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "fr" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "id" : "KDX &amp; Cryptix Hak Cipta (c) 2023 Cryptix &amp; 2024 Cryptix<br> Hak Cipta Dilindungi Undang-Undang.",
+  "it" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "ja" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "ko" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "pt_BR" : "KDX & Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> Todos os direitos reservados",
+  "zh" : "KDX &amp; Cryptix 版权所有 (c) 2023 Cryptix &amp; Cryptix 开发者 <br> 保留所有权利。",
   "zh_HANS" : ""
 }, {
   "en" : "Configuration Template",
@@ -2166,15 +2166,15 @@
   "zh" : "已有钱包",
   "zh_HANS" : ""
 }, {
-  "en" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "de" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "fr" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "id" : "KDX &amp; Cryptix Hak Cipta (c) 2023 Kaspa &amp; 2024 Cryptix<br> Hak Cipta Dilindungi Undang-Undang.",
-  "it" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "ja" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "ko" : "KDX &amp; Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> All Rights Reserved.",
-  "pt_BR" : "KDX & Cryptix Copyright (c) 2023 Kaspa &amp; 2024 Cryptix<br> Todos os direitos reservados",
-  "zh" : "KDX &amp; Cryptix 版权所有 (c) 2023 Kaspa &amp; 2024 Cryptix 开发者 1 保留所有权利。",
+  "en" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "de" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "fr" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "id" : "KDX &amp; Cryptix Hak Cipta (c) 2023 Cryptix &amp; 2024 Cryptix<br> Hak Cipta Dilindungi Undang-Undang.",
+  "it" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "ja" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "ko" : "KDX &amp; Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> All Rights Reserved.",
+  "pt_BR" : "KDX & Cryptix Copyright (c) 2023 Cryptix &amp; 2024 Cryptix<br> Todos os direitos reservados",
+  "zh" : "KDX &amp; Cryptix 版权所有 (c) 2023 Cryptix &amp; 2024 Cryptix 开发者 1 保留所有权利。",
   "zh_HANS" : ""
 }, {
   "en" : "Create a password for your new wallet",
