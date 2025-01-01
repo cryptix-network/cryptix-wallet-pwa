@@ -18,7 +18,7 @@ class CryptixWalletHeader extends BaseElement{
 				display:flex;align-items:center;padding:5px;
 			}
 			.logo{
-				height:30px;width:30px;/*background-color:#DDD;*/
+				height:150px;width:30px;/*background-color:#DDD;*/
 				background:no-repeat url('/resources/images/cryptix.png') center;
 				background-size:contain;
 			}
