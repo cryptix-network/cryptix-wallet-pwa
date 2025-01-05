@@ -7,7 +7,7 @@
   "scripts": {
     "prepare": "npx webpack",
     "prepublishOnly": "rm -rf ./dist && rm -f package-lock.json && npm install --also=dev",
-    "startserver": "node pwa.js --grpc 127.0.0.1:18110 --mainnet --debug --verbose --host 0.0.0.0"
+    "startserver": "node pwa.js --grpc 127.0.0.1:19201 --mainnet --debug --verbose --host 127.0.0.1"
   },
   "authors": [
     {
