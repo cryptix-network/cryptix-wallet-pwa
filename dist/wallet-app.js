@@ -70,12 +70,12 @@
 				cursor:pointer;
 				background-color:var(--flow-btn-bg-color, inherit);
 				border-color:var(--flow-btn-border-color, inherit);
-				color:var(--flow-btn-color, inherit);
+				color: #fff;
 			}
 			:host(:not([disabled]):hover){
 				background-color:var(--flow-btn-hover-bg-color, inherit);
-				border-color:var(--flow-btn-hover-border-color, inherit);
-				color:var(--flow-btn-hover-color, inherit);
+				border-color: #03abc0;
+				color: #03abc0;
 				--fa-icon-color:var(--flow-btn-hover-color, inherit);
 			}
 			:host([primary]),
@@ -357,6 +357,7 @@
 	}
 	.pagination a.disabled{
 		opacity:0.5;
+		color: #a1a1a1:
 	}
 	.pagination a.hidden{display:none}
 	.pagination a.active{
@@ -456,6 +457,7 @@
 				padding-top: 2px;
 				white-space: nowrap;
 				overflow: hidden;
+				color: #02bcd4;
 				text-overflow: ellipsis;
 				/*border: 1px solid red;*/
 			}
@@ -467,6 +469,7 @@
 			}
 			svg.icon{
 				cursor:pointer;
+				color: #fff;
 			}
 			fa-icon,
 			svg.icon:hove{
@@ -486,8 +489,8 @@
 			.logo {
 				left: 0px;
 				top: 0px;
-				width:52px;
-				height:52px;
+				width:152px;
+				height:152px;
 				background-position: center;
 				background-size: contain;
 				background-repeat: no-repeat;
@@ -1247,7 +1250,7 @@
 			width:var(--flow-form-control-icon-box-width,24px);
 			height:var(--flow-form-control-icon-box-height,24px);
 			margin-right:var(--flow-form-control-icon-box-margin,8px);
-			fill:var(--flow-primary-color, rgba(0,151,115,1.0));
+			fill: #fff;
 		}
 		.title-box{
 			user-select:none;line-height:24px;cursor:pointer;
@@ -1750,7 +1753,7 @@
 		svg,img{
 			width: var(--fa-icon-size, 19px);
 			height: var(--fa-icon-size, 19px);
-			fill: var(--fa-icon-color);
+			fill: #fff;
 		}
 		img{object-fit:contain;}
 		`}constructor(){super(),this.src="",this.style="",this.css="",this.color=""}firstUpdated(){}render(){this.src=this.iconPath(this.icon);let{size:e,color:t,w:r,h:i}=this;r=r||e?`width:${r||e}px;`:"",i=i||e?`height:${i||e}px;`:"",t=t?`fill:${t};`:"";let n=this.src.split(/\?#/)[0].split(".").pop().toLowerCase();return["png","jpeg","jpg"].includes(n)?p.dy`<img style="${r}${i}${t}${this.css||""}" src="${this.src}" />`:p.dy`
@@ -3513,6 +3516,7 @@
 			.body{
 				padding:var(--flow-context-manager-body-padding, 10px);
 				flex:1;overflow:auto;
+
 			}
 			.buttons{
 			    margin:10px;display:flex;flex-wrap:wrap;justify-content:flex-end;
@@ -3587,8 +3591,8 @@
 				text-overflow:elipsis;overflow:hidden;
 				padding:var(--flow-gridstack-panel-heading-padding, 5px);
 				background-color:var(--flow-gridstack-panel-heading-bg, var(--flow-primary-color));
-				color:var(--flow-gridstack-panel-head-color, var(--flow-primary-invert-color));
 				display:flex;flex-direction:row;
+				color: #fff;
 				align-items:var(--flow-gridstack-panel-heading-align-items, center);
 				overflow:var(--flow-gridstack-panel-heading-overflow, hidden);
 				text-overflow:var(--flow-gridstack-panel-heading-text-overflow, ellipses);
@@ -4005,13 +4009,16 @@
 	.tx-list .tx-row{
 		margin:0px 5px;
 		display:flex;background-color:var(--tx-bg-color-1);
-		border-bottom:1px solid var(--tx-border-color);
+		border-bottom:0px solid var(--tx-border-color);
 		flex-wrap:wrap;padding:2px;
 		position:relative;
+		background-color: #0b0e13;
+		color: #fff;
+
 	}
-	.tx-list .tx-icon{--fa-icon-color:var(--flow-primary-color)}
+	.tx-list .tx-icon{--fa-icon-color: #fff;}
 	.tx-list .tx-row .tx-progressbar{position:absolute;left:5px; top:30px;}
-	.tx-list .tx-row:nth-child(2n){background-color:var(--tx-bg-color-2)}
+	.tx-list .tx-row:nth-child(2n){background-color: #0b0e13;}
 	.tx-list .tx-date{white-space:nowrap;margin-left:16px;}
 	.tx-list .tx-id,
 	.tx-list .tx-address{
@@ -4025,11 +4032,11 @@
 	
 	.tx-list .tx-amount{
 		white-space:nowrap;margin:0px 20px;
-		flex:1;text-align:right;color:#029a45;
+		flex:1;text-align:right;color:#01e29f;
 	}
 	.tx-list .tx-num{min-width:60px}
 	.tx-list .br{min-width:100%;}
-	.tx-list [txout] .tx-amount{color:#a00}
+	.tx-list [txout] .tx-amount{color:#fb1664;}
 	[txmoved], .tx-list [txmoved].tx-row{
 		display:none;
 		text-decoration:line-through;background-color:rgba(255, 0, 0, 0.16);
@@ -4063,7 +4070,10 @@
 			}
 			flow-btn{vertical-align:bottom;margin-bottom:5px;}
 			flow-input flow-btn{margin-bottom:0px;}
-			:host(.active){opacity:1;z-index:100000;display:flex;}
+			:host(.active){opacity:1;z-index:100000;display:flex; 	background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(/resources/images/background.png);}
 			.container{
 				box-sizing:border-box;
 				width:100%;
@@ -4078,6 +4088,7 @@
 				padding:var(--cryptix-dialog-container-padding, 0px);
 				position:relative;
 				display:flex;flex-direction:column;
+				
 			}
 			.close-btn{
 			    color:var(--flow-dialog-close-btn-color, var(--flow-color));
@@ -4094,14 +4105,15 @@
 			.heading{
 				margin:0px;padding:5px 10px;font-size:1rem;min-height:30px;
 				display:flex;align-items:center;
-				border-bottom:2px solid var(--flow-primary-color, #F00);
+				border-bottom:2px solid #00bcd4;
+				color: #fff;
 			}
 			.heading-init{
 				min-height:0px;
 				border-bottom:none;
 			}
 			.flex{flex:1}
-			.sub-heading{padding:5px;font-size:1.2rem;}
+			.sub-heading{padding:5px;font-size:1.2rem; color: #fff;}
 			.body{flex:1;display:flex;justify-content:center;overflow:hidden auto;}
 			.inner-body{max-width:90%;width:700px;height:fit-content;padding:30px;}
 			.full-width{width:100%;max-width:100%;}
@@ -4145,7 +4157,7 @@
 			</div>
 		`}constructor(){super(),this._onUrlHistoryPop=e=>{this.onUrlHistoryPop(e.detail,e)},this.withHistory=window.isMobile}attachUrlHistoryPopEvent(){this.withHistory&&window.addEventListener("_popstate",this._onUrlHistoryPop)}removeUrlHistoryPopEvent(){window.removeEventListener("_popstate",this._onUrlHistoryPop)}connectedCallback(){super.connectedCallback(),this.attachUrlHistoryPopEvent()}disconnectedCallback(){super.disconnectedCallback(),this.removeUrlHistoryPopEvent()}onUrlHistoryPop({state:e,oldState:t},r){t?.uid==this.uid&&(console.log("onUrlHistoryPop:",t?.uid==this.uid,{state:e,oldState:t}),this._hide(!0))}pushHistory(e=""){if(!this.withHistory)return;let t=this.tagName||this.name||this.constructor.name;t=t.replace(/\-/g,"");let r=t.toLowerCase().replace(/(cryptix|dialog|mobile)/g,""),i={type:t,uid:e,key:r};history.pushState(i,t,"/"+r+"/"+e),Ft.push(i)}historyGoBack(){history.back()}buildRenderArgs(){return{}}renderHeading(e){return""}renderHeading(e){return""}renderButtons(e){return this.classList.add("no-buttons"),""}renderBackBtn(){return p.dy`<fa-icon class="back-btn" icon="arrow-alt-left"
 			@click=${this.onBackClick}></fa-icon>`}onBackClick(){this.hide()}firstUpdated(...e){super.firstUpdated(...e),this.qS=this.renderRoot.querySelector.bind(this.renderRoot),this.qSAll=this.renderRoot.querySelectorAll.bind(this.renderRoot)}setError(e){this.errorMessage=e}show(){this.classList.add("active"),this.uid=this.uid||(0,p.FG)(),this.pushHistory(this.uid)}_hide(e=!1){this.classList.remove("active"),!e&&this.withHistory&&this.historyGoBack()}hide(e=!1){this._hide(e)}onCloseClick(){this.hide()}checkPassword(e){return Dt(e)}}(class extends Ut{static get properties(){return{mode:{type:String,reflect:!0},inputType:{type:String},isFresh:{type:Boolean,reflect:!0},hideLogo:{type:Boolean,reflect:!0}}}static get styles(){return[Ut.styles,p.iv`
-			.container{max-height:var(--cryptix-dialog-container-max-height, 600px)}
+			.container{max-height:var(--cryptix-dialog-container-max-height, 600px);background-color: rgba(11, 14, 19, 0.6); border: solid 1px rgba(11, 14, 19, 1);}
 			:host([mode="create"]) .container{max-height:var(--cryptix-dialog-container-max-height, 500px)}
 			:host([mode="init"]) .container{max-height:var(--cryptix-dialog-container-max-height, 200px)}
 			:host([mode="recover"]) .container{max-height:var(--cryptix-dialog-container-max-height, 450px)}
@@ -4153,7 +4165,7 @@
 			:host([mode="init"]) .buttons{justify-content:center}
 			:host([mode="open"]) .inner-body{padding:0px 30px;}
 
-			.text-center, .heading{text-align:center;}
+			.text-center, .heading{text-align:center; color: #fff;}
 			.words{margin:20px 0px;max-width:500px;margin:auto;}
 			.words .row{display:flex;justify-content:center;}
 			.words .cell{flex:1;width:10px;text-align:center;padding:5px}
@@ -4289,11 +4301,11 @@
 			.success-msg{text-align:center;margin-top:65px}
 			.varification-msg-box{min-height:80px;}
 		`]}constructor(){super(),this.hideable=!0,this.step=1}open(e,t){this.step=e.step||1,this.callback=t,this.args=e,this.mnemonic=e.mnemonic,this.hideable=!!e.hideable,this.show()}buildRenderArgs(){let{step:e}=this;return{stepName:`Step${e}`}}renderHeading({stepName:e}){return p.dy`${this.hideable?this.renderBackBtn():""} ${(0,v.T)("Recovery Seed")}`}renderBody({stepName:e}){return this[`render${e}`]()}renderButtons({stepName:e}){return this[`render${e}Buttons`]()}renderStep1(){if(!this.mnemonic)return"";let{mnemonic:e}=this,t=e.split(" ");const r=(0,p.OZ)(t,4);let i=[];for(;i.length<3;){let e;do{e=(0,p.XF)(0,11)}while(i.includes(e));i.push(e)}this.words=t,this.correctWords=i.map((e=>t[e])),this.indexes=i;let n=t;return this.indexes.forEach((e=>{n.splice(e,1)})),this.otherWords=(0,p.TV)(n),this.varificationStep=0,this.varificationStepAnswered="",p.dy`
-			<p is="i18n-p">
+			<p is="i18n-p" style="color: #fff !important;">
 				Your wallet is accessible by a seed phrase.
 				The seed phrase is an ordered 12-word secret phrase.
 			</p>
-			<p is="i18n-p">
+			<p is="i18n-p" style="color: #fff !important;">
 				Make sure no one is looking, as anyone with your
 				seed phrase can access your wallet your funds.
 				Write it down and keep it safe.
@@ -4310,7 +4322,7 @@
 					</div>
 					`))}
 			</div>
-			<p class="dull-text text-center" is="i18n-p">
+			<p class="dull-text text-center" is="i18n-p" style="color: #fff !important;">
 				Cool fact: there are more 12-word phrase combinations than nanoseconds
 				since the big bang!
 			</p>	
@@ -4318,11 +4330,11 @@
 			<div class="dots">
 				${this.indexes.map(((e,t)=>{let r=this.varificationStepAnswered?"times":"circle";return t<this.varificationStep?r="check":t>this.varificationStep&&(r="circle"),p.dy`<fa-icon class="dot" icon="${r}"></fa-icon>`}))}
 			</div>
-			<div class="varification-msg-box">
+			<div class="varification-msg-box" style="color: #fff !important;">
 				<p class="varification-msg">${r}</p>
 				<div ?hidden=${!i} class="sub-msg dull-text">${i}</div>
 			</div>
-			<div class="varification-title">${s}</div>
+			<div class="varification-title" style="color: #fff !important;">${s}</div>
 			<!--div>${this.correctWords[this.varificationStep]} ${this.varificationStepAnswered}</div-->
 			<div class="button-row" @click="${this.wordClick}">
 				${e.map((e=>p.dy`
@@ -4337,8 +4349,8 @@
 				<fa-icon class="dot" icon="check"></fa-icon>
 				<fa-icon class="dot" icon="check"></fa-icon>
 			</div>
-			<p class="text-center" is="i18n-p">Great Success!</p\]>
-			<p class="success-msg" is="i18n-p">
+			<p class="text-center" is="i18n-p" style="color: #fff !important;">Great Success!</p\]>
+			<p class="success-msg" is="i18n-p" style="color: #fff !important;">
 				Remember...<br />
 				Anyone with this 12-word phrase can access your wallet your funds.
 				Keep it safe!
@@ -4354,14 +4366,14 @@
 			.estimate-tx table { font-size: 1.02rem;margin-top:2px}
 			.estimate-tx table tr td { padding: 2px 3px; }
 			.estimate-tx table tr td:nth-child(2) { min-width:150px; }	
-			flow-checkbox{width:100%;margin:15px 0px;}
+			flow-checkbox{width:100%;margin:15px 0px; color: #fff;}
 			[col] { display:flex; flex-direction: row;flex-wrap:wrap }
 			[spacer] { min-width: 32px; }
 			[flex] { flex:1; }
 			flow-input{min-width:100px;}
 			flow-input.amount,
 			flow-input.fee{flex:1}
-			flow-checkbox{margin:8px 0px;}
+			flow-checkbox{margin:8px 0px; color: #fff;}
 			.body-box{align-items:flex-start;}
 			@media (max-width:400px){
 				[spacer] { min-width: 100%; }
@@ -4384,7 +4396,7 @@
 				</flow-input>
 			</div>
 			<flow-input class="note full-width" outer-border label="${(0,v.T)("Note")}"></flow-input>
-			<flow-checkbox class="calculate-network-fee" checked
+			<flow-checkbox style="color: #fff;" class="calculate-network-fee" checked
 				@changed="${this.onCalculateFeeChange}">${(0,v.T)("Automatically calculate network fee")}</flow-checkbox>
 			<flow-checkbox class="inclusive-fee"
 				@changed="${this.onInclusiveFeeChange}">${(0,v.T)("Include fee in the amount")}</flow-checkbox>
@@ -4471,10 +4483,10 @@
 					@click="${this.showT9}"><fa-icon icon="keyboard"></fa-icon></flow-btn>
 			</flow-input>
 			<flow-input class="note full-width" outer-border label="Note"></flow-input>
-			<flow-checkbox class="calculate-network-fee" checked
+			<flow-checkbox style="color: #fff;" class="calculate-network-fee" checked
 				@changed="${this.onCalculateFeeChange}">${(0,v.T)("Automatically calculate network fee")}</flow-checkbox>
 			<!--flow-input class="maximum-fee full-width" label="Maximum network fee"></flow-input-->
-			<flow-checkbox class="inclusive-fee"
+			<flow-checkbox style="color: #fff;" class="inclusive-fee"
 				@changed="${this.onInclusiveFeeChange}">${(0,v.T)("Include fee in the amount")}</flow-checkbox>
 			${this.renderEstimate()}
 			<div class="error">${this.errorMessage}</div>
@@ -4553,7 +4565,7 @@
 				--k-pagination-border-color:var(--flow-primary-color);
 			}
 			.pagination a{
-				border: var(--flow-btn-border, 2px solid var(--flow-border-color, var(--flow-primary-color, #b24545)));
+				border: var(--flow-btn-border, 2px solid var(--flow-border-color, var(--flow-primary-color, #0097e1)));
 				border-radius:var(--flow-btn-radius, 8px);
 				border-width:var(--flow-btn-border-width, 2px);
 			}
@@ -4568,7 +4580,7 @@
 			}
 			.buttons{justify-content:flex-end;align-items:center}
 			.spinner{margin-right:20px}
-			.tx-list{height:initial}
+			.tx-list{height:initial; padding-top: 10px; padding-bottom: 10px;}
 		`]}render(){const e=this.buildRenderArgs();return p.dy`
 			<div class="container">
 				<h2 class="heading">${this.renderHeading(e)}</h2>
@@ -4640,6 +4652,7 @@
 				text-align: center;
 				font-size: 0.8rem;
 				margin-bottom: 20px;
+				color: #fff;
 			}
 		`]}constructor(){super(),this.txs=[],this.utxos=new Map,this.walletSignal=xt(),this.walletMeta={},this.isOnline=!1,this.txLimit=Math.floor((window.innerHeight-165)/72),this.utxosLimit=this.txLimit,this.hideUTXOs=!0,this.isOfflineBadge=!1,this.debugscanner=window.location.href.includes("debugscanner"),this.preparingTxNotifications=new Map,this.dots="",this.UTXOIndexSupport=!0,this.recentTransactionsHeading=v.ag.t("Recent Transactions"),this.walletDebugInfo={},this.reloadingUTXOs=!1,this.throttledCompoundUTXO=(e=>{let t,r;return(...i)=>{r?(t&&clearTimeout(t),t=setTimeout((()=>{Date.now()-r>=1e3&&(e(...i),r=Date.now())}),1e3-(Date.now()-r))):(e(...i),r=Date.now())}})((async()=>{if(this.waitingForCompound)return;if(this.waitingForCompound=!0,this.autoCompound)return await this._compoundUTXOs(15e3,!1),void(this.waitingForCompound=!1);let e=p.dy`
 				This wallet has too many transactions<br >
@@ -4683,7 +4696,7 @@
 			</div>
 		</div>`}_renderAllTX({skip:e,items:t}){let r,i,n,o,s,{blueScore:a=0}=this;return p.dy`
 			${t.length?"":p.dy`<div class="no-record" is="i18n-div">No Transactions</div>`}
-			<div class="tx-list">
+			<div class="tx-list" style="padding-top: 20px; padding-bottom: 20px; background-color: #0b0e13;">
 				${t.map(((t,c)=>{let l=t.isCoinbase?wt.y1:wt.Hn;return s=t.blueScore||0,r=a-s,a<s&&(r=l+1),i=Math.min(l,r),n=i/l,o=n>.7?"#60b686":n>.5?"orange":"red",p.dy`
 					<div class="tx-row" ?txin=${t.in} tx-version=${t.version} ?txmoved=${t.isMoved} ?txout=${!t.in}>
 						<fa-icon class="tx-icon" icon="${t.in?"sign-in":"sign-out"}"></fa-icon>
@@ -4782,7 +4795,7 @@
 			}
 
 			.pagination a{
-				border: var(--flow-btn-border, 2px solid var(--flow-border-color, var(--flow-primary-color, #b24545)));
+				border: var(--flow-btn-border, 2px solid var(--flow-border-color, var(--flow-primary-color, #0097e1)));
 				border-radius:var(--flow-btn-radius, 8px);
 				border-width:var(--flow-btn-border-width, 2px);
 				padding:var(--flow-page-btn-padding, var(--flow-btn-padding, 5px))
@@ -4792,11 +4805,11 @@
 			}
 
 			.logo{
-				width:30px;height:30px;/*background-color:#DDD*/
+				width:140px;height:33px;/*background-color:#DDD*/
 				display:var(--cryptix-wallet-header-logo-diaplay, initial);
 			}
 			.logo-img{max-width:100%;max-height:100%;}
-			fa-icon.spinner{position:relative !important;margin: 0px 10px;}
+			fa-icon.spinner{position:relative !important;margin: 0px 10px; color: #fff;}
 			.error-message{color:#F00;margin:10px 0px;}
 			.tabs-container{
 				overflow:hidden;overflow-x:auto;
@@ -4813,6 +4826,8 @@
 				border-bottom:2px solid transparent;min-height:30px;
 				margin:0px 5px;color:inherit;
 				text-decoration:none;
+				background-color:#1e222a;
+				color: #fff;
 			}
 			.tab.selected{
 				border-bottom-color:var(--cryptix-wallet-tab-active-border-color, var(--flow-primary-color));
@@ -4859,7 +4874,7 @@
 				flex:1;width:150px;max-width:150px;margin:15px;
 				box-shadow:var(--flow-box-shadow);
 			}
-			.balance-badge{text-align:center;margin:15px;}
+			.balance-badge{text-align:center;margin:15px; color: #fff;}
 			.balance{font-size:1.2rem}
 			.balance.pending{font-size:0.9rem;margin:5px 0px;}
 			flow-dropdown.icon-trigger{
@@ -4896,7 +4911,7 @@
 			[not-ready] .tab-contents{display:none}
 			.br{min-width:100%;}
 			.pb-0{padding-bottom:0px}
-			.badge{margin:15px auto;width:calc(100% - 30px); font-size:1.1rem; text-align:center; }
+			.badge{padding:15px; width:calc(100% - 30px); font-size:1.1rem; text-align:center; background-color: #0b0e13; color: #fff; }
 			.center-btn{min-width:120px;max-width:180px;display:block;margin:5px auto}
 			.v-margin{margin-top: 10px; margin-bottom:10px;}
 			.flow-swipeable-row{position:relative;height:100%;max-height:100%;overflow:hidden;}
@@ -4908,7 +4923,7 @@
 			.faucet-ux .margin {margin: 24px;}
 			.faucet-ux .margin-bottom {margin-bottom: 24px;}
 			.network-ux,
-			.info-ux{display:flex;flex-direction:column;align-items:center;}
+			.info-ux{display:flex;flex-direction:column;align-items:center; color: #fff;}
 			.network-ux .caption,
 			.info-ux .caption{margin-bottom: 15px;text-transform: uppercase;}
 			.network-ux table tr td,
@@ -4916,7 +4931,7 @@
 			.network-ux table tr td:nth-child(2),
 			.info-ux table tr td:nth-child(2){ min-width:150px; }
 
-			.wallet-ux, .faucet-ux, .network-ux,.info-ux{margin: 24px 15px;}
+			.wallet-ux, .faucet-ux, .network-ux,.info-ux{padding: 24px 15px; background-color: #0b0e13;}
 			.recent-transactions>.heading{text-align:center}
 			.tx-list{flex: 1 1 0%;height:100px;overflow-y:auto;}
 			.header .header{margin-left:10px;}
@@ -4926,7 +4941,7 @@
 			.recent-transactions .tx-rows{max-height:none;}
 			flow-expandable [slot="title"] fa-icon{
 				--fa-icon-size: var(--flow-expandable-icon-box-svg-width,24px);
-				--fa-icon-color:var(--flow-primary-color, #b24545);
+				--fa-icon-color:var(--flow-primary-color, #0097e1);
 			    margin-right: var(--flow-expandable-icon-box-svg-margin-right,8px);
 			}
 			flow-expandable [slot="title"].center-icon{
@@ -4938,7 +4953,7 @@
 			flow-expandable[no-icon]{
 				--flow-expandable-icon-box-max-width:0px;
 			}
-			.donation-info{margin-top:26px;text-align:center}
+			.donation-info{margin-top:26px;text-align:center; color: #fff;}
 			.donation-info .donation-address-box.badge{
 				margin-top:5px;
 				display:flex;
@@ -4972,7 +4987,7 @@
 				cursor: pointer;
 			}
 			.clear-used-utxos{margin:0px 10px;cursor:pointer}
-			.theme-btn,.language-icon,.lock-btn{cursor:pointer}
+			.theme-btn,.language-icon,.lock-btn{cursor:pointer; color: #fff; fill: #fff;}
 			.language-icon{position:relative;margin:0px 10px 0 5px}
 			.language-icon fa-icon{margin-right:10px}
 			.language-icon:after{
@@ -5130,7 +5145,7 @@
 						<div class='caption'>Network Status</div>
 						${this.networkName?p.dy`
 							<div>
-								<table>
+								<table style="color: #fff;">
 									<tr><td>Network</td><td>${this.networkName}</td></tr>
 									<tr><td>DAA Score</td><td>${ue.commas(this.blueScore)}</td></tr>
 									<tr><td>DAG Header</td><td>${ue.commas(this.headerCount)}</td></tr>
@@ -5193,8 +5208,6 @@
 			${this.hideI18nIcon?"":p.dy`<div class="language-icon">
 				<fa-icon icon="icons:language"
 				@click="${this.onLangClick}"></fa-icon></div>`}
-			<fa-icon class="theme-btn" @click=${this.toggleTheme}
-				icon="${"light"==i?"moon":"sun"}"></fa-icon>
 		</div>
 		`}renderLockScreen(){return p.dy`
 			<div class="lock-screen">
@@ -5270,7 +5283,7 @@
 				max-width:640px;margin:5px auto;padding:10px;text-align:center;
 				background-color:var(--cryptix-wallet-warning-bg, #fdf8e4);
 			}
-			.heading{margin:5px 15px 25px;font-size:1.5rem;}
+			.heading{margin:5px 15px 25px;font-size:1.5rem; color: #fff;}
 			flow-btn{vertical-align:bottom;margin:5px;}
 			.error-message{color:#F00;margin:10px 0px;}
 			[hidden]{display:none}
@@ -5281,7 +5294,7 @@
 				padding-top:5px;margin-top:10px
 			}
 			.flex{flex:1}
-			.body{display:flex;align-items:top;flex-wrap:wrap;justify-content:center}
+			.body{display:flex;align-items:top;flex-wrap:wrap;justify-content:center;}
 			.left-area{
 				flex:4;margin:0px 20px 40px;max-width:600px;
 			}
@@ -5312,18 +5325,18 @@
 		 	.value-pending{
 		 		font-family : "Exo 2"; font-size: 20px; margin-top: 4px;
 		 	} 
-			.label { font-family : "Open Sans"; font-size: 20px; }
+			.label { font-family : "Open Sans"; font-size: 20px; color: #fff;}
 			.label-pending { font-family : "Open Sans"; font-size: 14px; }
 			[row]{display:flex;flex-direction:row;justify-content:space-between;}
 			flow-qrcode{width:172px;margin-top:50px;box-shadow:var(--flow-box-shadow);}
-			.address-badge{padding:15px 0px;}
+			.address-badge{padding:15px 0px; color: #fff;}
 			.address-input{height:40px;max-width:460px}
 			.qr-code-holder{
 				display:flex;align-items:flex-end;justify-content:space-between;
 				max-height:200px;margin-bottom:32px;
 			}
 			.buttons-holder {display:flex;}
-			.status{display:flex;margin-top:10px;}
+			.status{display:flex;margin-top:10px; color: #fff;}
 			.tx-open-btn{
 				margin:0px 10px;padding:5px;
 				border-radius:var(--flow-dropdown-trigger-border-radius, 3px);
@@ -5349,7 +5362,7 @@
 				font-size:initial;
 				margin:5px 0px 10px;
 			}
-			.tabs-container{border-top:0px;}
+			.tabs-container{border-top:0px; border-bottom:2px solid #0b0e13;}
 			.header{
 				border-bottom:var(--cryptix-wallet-header-border-bottom, --2px solid var(--cryptix-wallet-tab-border-top-color, var(--flow-primary-color)));
 			}
